@@ -38,7 +38,7 @@ def main():
 
 def agregar_grupo(grupoA,grupoB,grupoC):
         try:
-            grupo : int(input("Seleccione el grupo a registar: \n1. Grupo A\n2. Grupo B\n3. Grupo C"))
+            grupo = int(input("Seleccione el grupo a registar: \n1. Grupo A\n2. Grupo B\n3. Grupo C"))
             i = 1
             if grupo == 1:
                 while True:
@@ -95,31 +95,31 @@ def agregar_grupo(grupoA,grupoB,grupoC):
                     elif salir == "n":
                         break
             elif grupo == 3:
-            while True:
-                print(f"Registro coder #{i}")
-                grupo = "Grupo C"
-                nombre = input("Ingrese el nombre: ")
-                ingreso = input("Ingrese el mes de ingreso: ")
-                edad = int(input("Ingrese la edad: "))
-                monitor = int(input("Ingrese las veces que fue monitor: "))
-                inasistencias = int(input("Ingrese las inasistencias: "))
-                talleres = int(input("Ingrese la cantidad de talleres entregados: "))
-                test = float(input("Ingrese la nota obtenida en el test de nivelación: "))
-                colaboracion = int(input("Ingrese nota de 1 a 10 para la colaboración: "))
-                participacion = int(input("Ingrese nota de 1 a 10 para la participación: "))
+                while True:
+                    print(f"Registro coder #{i}")
+                    grupo = "Grupo C"
+                    nombre = input("Ingrese el nombre: ")
+                    ingreso = input("Ingrese el mes de ingreso: ")
+                    edad = int(input("Ingrese la edad: "))
+                    monitor = int(input("Ingrese las veces que fue monitor: "))
+                    inasistencias = int(input("Ingrese las inasistencias: "))
+                    talleres = int(input("Ingrese la cantidad de talleres entregados: "))
+                    test = float(input("Ingrese la nota obtenida en el test de nivelación: "))
+                    colaboracion = int(input("Ingrese nota de 1 a 10 para la colaboración: "))
+                    participacion = int(input("Ingrese nota de 1 a 10 para la participación: "))
 
-                estudiante = {"Nombre":nombre.capitalize(), "Ingreso":ingreso.capitalize(), "Edad":edad, "Grupo": grupo.capitalize(), 
-                              "Monitorias":monitor, "Inasistencias":inasistencias, "Talleres":talleres, "Test de nivelación": test, 
-                              "Colaboración":colaboracion, "Participación":participacion}
-                grupoC.append(estudiante)
-            
-                salir = input("¿Desea ingresar más coders al registro? S/N")
-                salir = salir.lower()
+                    estudiante = {"Nombre":nombre.capitalize(), "Ingreso":ingreso.capitalize(), "Edad":edad, "Grupo": grupo.capitalize(), 
+                                "Monitorias":monitor, "Inasistencias":inasistencias, "Talleres":talleres, "Test de nivelación": test, 
+                                "Colaboración":colaboracion, "Participación":participacion}
+                    grupoC.append(estudiante)
+                
+                    salir = input("¿Desea ingresar más coders al registro? S/N")
+                    salir = salir.lower()
 
-                if salir == "s":
-                    i += 1
-                elif salir == "n":
-                    break
+                    if salir == "s":
+                        i += 1
+                    elif salir == "n":
+                        break
         except:
             print("El valor ingresado debe ser un número.")
 
@@ -341,7 +341,7 @@ def ceremonia(grupoA,grupoB,grupoC):
 
         if grupoC[index]["Participación"] > numNil:
             nilC.append(grupoC[index]["Participación"])
-            xNilC..append(grupoC[index]["Nombre"])
+            xNilC.append(grupoC[index]["Nombre"])
             numNil = grupoC[index]["Participación"] 
 
     print(f"El coder del grupo A que ha sido más veces monitor es {maxMonA}")
