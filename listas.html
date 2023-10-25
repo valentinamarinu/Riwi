@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Así se estiliza el paso de un acceso al anclaje de otro lado de
+        la pagina */
+        * { 
+            scroll-behavior: smooth;
+        }
+        body {
+            min-height: 150vh;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="./"> Volver </a>
+    <br/>
+    <!-- Para ir a una sección  especifica de la misma página, el # se pone
+    para que se asocie al ID asigando a la sección -->
+    <a href="#lista_anidada_ordenada"> Ir a lista anidadas y ordenadas</a>
+    <center>
+        <h1> Listas </h1>
+    </center>
+    <hr/>
+
+    <h2>Listas Ordenadas en HTML5</h2>
+    <ol>
+        <il>Item 1</il>
+        <il>Item 2</il>
+        <il>Item 3</il>
+        <il>Item 4</il>
+        <il>Item 5</il>
+    </ol>
+    
+    <ol>
+        <!-- li{AQUÍ VA LO QUE QUIERO, SI QUIERO CONTADOR PONGO EL SIGNO $}*5 -->
+        <!-- li{Item $}*6 -->
+        <li>Items 1</li>
+        <li>Items 2</li>
+        <li>Items 3</li>
+        <li>Items 4</li>
+        <li>Items 5</li>
+        <li>Items 6</li>
+    </ol>
+    <hr/>
+
+    <h2>Listas no ordenadas en HTML</h2>
+    <ul>
+        <li>id 1</li>
+        <li>id 2</li>
+        <li>id 3</li>
+    </ul>
+    <hr/>
+
+    <h2>Listas aninadas no ordenadas en HTML</h2>
+    <ul>
+        <li> Item 1
+            <ul>
+                <li>cc 1</li>
+                <li>cc 2</li>
+            </ul>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <hr/>
+
+    <h2 id="lista_anidada_ordenada">Listas aninadas ordenadas en HTML</h2>
+    <ol>
+        <li> Item 1
+            <ul>
+                <li>cc 1</li>
+                <li>cc 2</li>
+            </ul>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+</body>
+</html>
